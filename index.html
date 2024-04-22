@@ -50,8 +50,15 @@
     <img src="tools.png" alt="Site Icon">
     <h1>Website is still being created</h1>
     <p1 style="font-size: large;">I wish for some unknown reason to know when the website will be up</p1>
-    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    <button onclick="sendEmail()">Send</button>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="apikey" value="e747380d-c6ea-4504-b603-0c13bd7536f4">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <div class="h-captcha" data-captcha="true"></div>
+        <button onclick="sendEmail()">Send</button>
+    </form>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
     <script>
         function sendEmail() {
