@@ -7,7 +7,11 @@ async function checkCredentials(name, surname, pin) {
         const response = await fetch('ringraziamenti.json');
         const data = await response.json();
 
-        const match = data.find(entry => entry.nome === name.toLowerCase() && entry.cognome === surname.toLowerCase() && (entry.pin == pin || pin == passpartout));
+        name = formatText(name);
+        surname = formatText(surname);
+        
+
+        const match = data.find(entry => entry.nome === name && entry.cognome === surname && (entry.pin == pin || pin == passpartout));
 
         // Return result based on match
         return match ? { success: true, id: match.pin, ringraziamenti: match.ringraziamenti, name: match.nome, surname: match.cognome } : { success: false };
@@ -17,6 +21,11 @@ async function checkCredentials(name, surname, pin) {
     }
 }
 
+function formatText(text) {
+    const lowercased = text.toLowerCase();
+    const trimmed = lowercased.trim();
+    return trimmed;
+}
 
 async function handleSubmit(event) {
     event.preventDefault();

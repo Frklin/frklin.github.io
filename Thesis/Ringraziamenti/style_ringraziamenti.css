@@ -12,15 +12,19 @@ body, html {
     justify-content: center;
     align-items: center;
     background-color: #f9fafb;
+    overflow: hidden; /* Prevent page scroll, keep it within view */
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 16px;
     width: 100%;
     max-width: 600px;
+    height: 100%; /* Full height for centered content */
+    overflow: hidden;
 }
 
 /* Form Wrapper */
@@ -74,28 +78,34 @@ body, html {
     background-color: #2563eb;
 }
 
-.submit-button:active {
-    background-color: #1e40af;
+/* Error Message */
+.error-message {
+    color: #ff3b30;
+    font-size: 0.875rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: left;
 }
-/* Success Message Container */
-.success-message-container {
-    width: 100%;
-    max-width: 600px;
+
+/* Full-Width Welcome Text and Typing Text */
+.welcome-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1f2937;
     text-align: center;
-    padding: 24px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    width: 100%;
+    margin-top: 16px;
 }
 
-
-
-/* Typewriter Text Styling with Scroll */
+/* Scrollable Acknowledgment Text */
 .scrollable-text {
-    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 100vh;
     overflow-y: auto;
-    padding: 8px;
+    padding: 10px;
     font-size: 1.2rem;
     font-style: italic;
     color: #1f2937;
@@ -113,24 +123,6 @@ body, html {
     border-radius: 4px;
 }
 
-
-/* Error message styling */
-.error-message {
-    color: #ff3b30;
-    font-size: 0.875rem;
-    margin-top: -10px;
-    margin-bottom: 20px;
-    text-align: left;
-}/* Typing Effect Styling */
-.welcome-text {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #1f2937;
-    text-align: center;
-    width: 100%;
-    margin-top: 16px;
-}
-
 .typing-text {
     font-size: 1.2rem;
     color: #1f2937;
@@ -138,17 +130,6 @@ body, html {
     text-align: left;
     font-style: italic;
     width: 100%;
-    max-width: 800px; /* Limits to a readable width on large screens */
     white-space: pre-wrap;
     padding: 10px;
 }
-/* .typing span {
-    display: inline-block;
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-} */
