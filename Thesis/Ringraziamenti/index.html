@@ -1,2 +1,58 @@
-<h1>Prova
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acknowledgement</title>
+    <link rel="stylesheet" href="style_ringraziamenti.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Form Wrapper -->
+        <div class="form-wrapper" id="formWrapper">
+            <h1 class="title">Ringraziamenti</h1>
+            <form id="acknowledgementForm" onsubmit="handleSubmit(event)">
+                <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Nome" 
+                    class="input-field" 
+                    required 
+                >
+                <input 
+                    type="text" 
+                    id="surname" 
+                    placeholder="Cognome" 
+                    class="input-field" 
+                    required 
+                >
+                <div class="input-group">
+                    <input 
+                        type="password" 
+                        id="pin" 
+                        placeholder="PIN" 
+                        class="input-field" 
+                        required 
+                    >
+                    <span id="error-message" class="error-message" hidden>Wrong Credential</span>
+                </div>
+                <button 
+                    type="submit" 
+                    class="submit-button"
+                >
+                    Enter
+                </button>
+            </form>
+        </div>
+
+        <!-- Success Message Container -->
+        <!-- Success Message Elements (no container) -->
+        <div id="ringraziamenti" style="display: flex; flex-direction: column;display: none;">
+        <h2 class="welcome-text" id="welcomeText" style="display: none;"></h2>
+        <div class="typing-text" id="typingText" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+</html>
