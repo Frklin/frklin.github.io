@@ -2,55 +2,228 @@
     {
     "nome" : "francesco",
     "cognome" : "palandra",
-    "pin" : "1234",
+    "pin" : "8791",
     "gruppo" : "All",
     "ringraziamenti" : "Ecco"
     },
     {
     "nome" : "lavinia",
     "cognome" : "cupido",
-    "pin" : "1234",
+    "pin" : "58321",
     "gruppo" : "Liceo",
-    "ringraziamenti" : "La prima persona al di fuori della mia famiglia che vorrei ringraziare è Lavinia, la mia vicina di casa, ma non così vicina da non farle prenderle la macchina per venire a casa mia. Il motivo principale è perchè in triennale la parte sua dei ringraziamenti purtroppo non è stata stampata (probabilmente c'era qualche errore nella stampante). Prenderò quindi un estratto di quei ringraziamenti e aggiungerò poi una seconda parte più aggiornata.\n\n\nParte scritta il 15/10/2022: Per ultima vorrei ringraziare Lavinia, con cui in questi tre anni ho condiviso le alzate alle 6 di mattina per andare all'Università per poi fare tappa fissa al baretto (probabilmente abusivo) per la strada dove non le hanno mai fatto il caffè come lo chiedeva lei (l'unica volta che hanno indovinata si è strozzata e mi ha fatto fare una brutta figura).\nParte nuova: Anche quest'anno mi ritrovo a scrivere dei ringraziamenti a te. Non è facile farlo, ma proverò a fare del mio meglio. Ci conosciamo ormai da moltimissimi anni, da quando facevo l'albero protagonista alla recita dell'asilo e tu avevi un ruolo secondario. Forse la persona che conosco da più tempo che in un modo o nell'altro c'è sempre stata nella mia vita. Ti voglio ringraziare per l'esserci stata per me, per regalarmi uscite tranquille in cui nel caos che avevo in testa trovavo una tranquillità, una leggerezza. Ti ringrazio per i tuoi abbracci timidi nei momenti in cui ne avevo bisogno e per le chiaccherate davanti un caffè a raccontarci le avventure e ridendo degli errori che abbiamo fatto. So che posso sempre contare su di te, e lo dico perchè non credo sia banale, ma difficile da trovare. In una vita di cambiamenti sei un po' un punto fisso, sei una parte della mia vita che è sta la e mi riporta a quando ero piccolo, con la leggerezza che un bambino ha nello sventolare le foglie ad una recita di cappuccetto rosso. Per questo ti voglio ringraziare, sperando di arrivare a 90 anni a prendere un caffè e ridere del nostro passato e delle figuracce che avrai fatto, grazie.\n"
+    "ringraziamenti" : "La prima persona, fuori dalla mia famiglia, che voglio ringraziare è Lavinia, la mia vicina di casa… non così vicina da non farle prenderle la macchina per venire a casa mia. Il motivo principale è perchè in triennale la parte sua dei ringraziamenti purtroppo non è stata stampata (probabilmente c'era qualche errore nella stampante). Prenderò quindi un estratto di quei ringraziamenti e aggiungerò poi una seconda parte più aggiornata.\n\nParte scritta il 15/10/2022: Per ultima vorrei ringraziare Lavinia, con cui in questi tre anni ho condiviso le alzate alle 6 di mattina per andare all'Università per poi fare tappa fissa al baretto (probabilmente abusivo) per la strada dove non le hanno mai fatto il caffè come lo chiedeva lei (l'unica volta che hanno indovinata si è strozzata e mi ha fatto fare una brutta figura).\n\nParte nuova: Anche quest’anno mi trovo a scriverti dei ringraziamenti. Non è facile, ma ci proverò. Ci conosciamo da moltissimi anni, da quando, alla recita dell’asilo, io facevo l’albero protagonista e tu avevi un ruolo secondario. Forse sei la persona che conosco da più tempo e che, in un modo o nell’altro, è sempre rimasta nella mia vita. Ti ringrazio per essere stata presente, per regalarmi quelle uscite tranquille che, nonostante il caos nella mia testa, mi facevano sentire in pace, leggero. Grazie per i tuoi abbracci timidi nei momenti di bisogno e per le chiacchierate davanti a un caffè, dove ci raccontavamo le nostre avventure e ridevamo degli errori fatti. So di poter sempre contare su di te, e lo dico perché non è scontato. In una vita di cambiamenti, tu sei un po’ un punto fisso, una parte della mia vita che mi riporta all’infanzia, a quella leggerezza che avevo da bambino quando sventolavo le foglie nella recita di Cappuccetto Rosso. Per tutto questo, ti ringrazio, sperando che anche a 90 anni potremo sederci insieme a prendere un caffè, ridendo del nostro passato e delle figuracce che, sicuramente, avrai continuato a fare. Grazie.\n"
     },
     {
     "nome" : "alessio",
     "cognome" : "mazzapioda",
-    "pin" : "1234",
+    "pin" : "74903",
     "gruppo" : "Liceo",
-    "ringraziamenti" : "Prova"
+    "ringraziamenti" : "Caro Alessio, ci conosciamo ormai da parecchi anni. Con te credo di aver condiviso più aspetti della mia vita di quanto si possa spiegare a parole – quasi non ci sarebbe bisogno di dire nulla, perché sei sempre stato presente. Ma due parole, comunque, le voglio dedicare a te. Ti ringrazio per essere stato sempre al mio fianco, per avermi sostenuto nelle mie scelte e per avermi trasmesso passione e fiducia nell'affrontare le cose, che fossero semplici canzoni con la band o decisioni più importanti. Sei sempre stato di supporto per me, cosa che a volte è forse mancata da parte mia (non su LoL, sicuramente). Per questo ti sono grato. Posso dire di essere fiero di averti nella mia vita, di poter condividere con te molti aspetti di essa e di avere questa complicità che ci accompagna praticamente in tutto quello che facciamo. Tra tutte le persone che conosco, forse sei quella che più mi assomiglia, e sei una costante su cui so di poter sempre contare. Grazie, quindi, per esserci sempre stato e per condividere anche questo traguardo insieme a me."
     },
     {
     "nome" : "lorenzo",
     "cognome" : "cesarini",
-    "pin" : "1234",
+    "pin" : "26487",
     "gruppo" : "Forum",
-    "ringraziamenti" : "Non potrei non iniziare da te. Uno dei miei due Lorenzi preferiti. Se il forum per me rappresenta una famiglia tu sei il fratello maggiore. Sei una persona d oro che mi mette sempre di buon umore, che sia una vacanza dall’altra parte del mondo o che sia una semplice uscita ad un bar, so di potermi sentire a casa. Ti ringrazio per tutto quello che hai fatto per me, soprattutto nelle piccole cose che ad occhio nudo non si vedono molto, ma per me valgono tanto."
+    "ringraziamenti" : "Non potrei non partire da te. Uno dei miei due Lorenzi preferiti. Se il forum per me è una famiglia, tu sei il fratello maggiore. Sei una persona d’oro, capace di mettermi di buon umore, che si tratti di una vacanza dall’altra parte del mondo o di una semplice uscita al bar; so di potermi sentire a casa. Ti ringrazio per tutto quello che hai fatto per me, specialmente per le piccole cose che possono sfuggire all’occhio ma che per me hanno un valore enorme. Non saprei spiegare il nostro rapporto, ma non credo ce ne sia bisogno: entrambi sappiamo cosa rappresentiamo l’uno per l’altro. La nostra è una di quelle amicizie in cui basta uno sguardo per capirsi al volo, una sintonia che rende unica ogni avventura e ogni esperienza. Grazie per condividere con me anche questo traguardo e per esserci sempre stato."
     },
-
-
-
+    {
+    "nome" : "lorenzo",
+    "cognome" : "falzi",
+    "pin" : "13756",
+    "gruppo" : "Forum",
+    "ringraziamenti": "Il mio altro Lorenzo preferito. Se Cesarini è come un fratello maggiore, tu per me sei come un fratello gemello. Adoro il modo in cui appoggi ogni avventura e ogni assurdità che ti propongo, rendendo ogni esperienza tre volte più divertente e unica. Non so bene perché tu e l’altro Lorenzo abbiate questo affetto incondizionato nei miei confronti, ma allo stesso tempo lo capisco, perché è lo stesso che provo per voi. Quando ci sei tu, mi sento a casa, so che quella serata andrà bene. Ti ringrazio per essere sempre stato presente nella mia vita, per il tuo supporto in qualsiasi ambito, e per avermi sempre spinto a dare il meglio, offrendomi fiducia e consapevolezza nel raggiungere i miei obiettivi. Lorenzo, ti auguro davvero il meglio, perché te lo meriti: la tua gentilezza (che Federica apprezza molto) è quasi ingiustificabile. Ti ringrazio in particolare oggi, per condividere con me questo traguardo; non vedo l’ora che si invertano i ruoli. Grazie, Lo."
+    },
+    {
+        "nome": "samuele",
+        "cognome": "somaschi",
+        "pin": "90531",
+        "gruppo": "Forum",
+        "ringraziamenti": "Pensavo che il ringraziamento più difficile da scrivere sarebbe stato quello di Giorgia, ma devo ricredermi, è più complicato il tuo, semplicemente perchè è difficile trovare le parole giuste. Ti voglio ringraziare per molte cose, per avermi fatto viaggiare in posti che da solo non avrei mai visitato, tipo le Hawaii o Bruca, ti ringrazio per far sembrare 3 giorni ad Abu Dhabi 10 giorni e ti ringrazio per far parte di questo bellissimo gruppo, che dopo 10 anni ancora mi regala emozioni uniche. Sei una di quelle persone che rendono il gruppo un luogo familiare, un posto dove chiunque vorrebbe stare. Spero di poter vivere con te altre mille avventure come quelle già passate (meticolosamente organizzate da te). Grazie per essere qui oggi a condividere con me questo traguardo, e ricordiamo anche il tuo titolo di dottore: non so come sia successo, ma ce l’hai."
+    },
+    {
+        "nome": "alessia",
+        "cognome": "boni",
+        "pin": "48276",
+        "gruppo": "Forum",
+        "ringraziamenti": "Alessia, a te vorrei dire grazie per una cosa forse scontata, ma importante: l’esserci conosciuti. Nella vita si incontrano tante persone che vanno e vengono; alcune passano inosservate, altre, come te, sono quelle di cui sono felice di far parte. Adoro il tuo umorismo, uno dei pochi che mi lascia spiazzato e senza parole. Sono davvero contento che tu faccia parte di questo gruppo, grazie."
+    },
+    {
+        "nome": "stefano",
+        "cognome": "raffaele",
+        "pin": "15842",
+        "gruppo": "Forum",
+        "ringraziamenti": "Stefano, sei senza dubbio la persona più buona che conosca, e una di quelle che mi hanno fatto e mi fanno sempre sentire a casa. Sono felice che tu faccia parte del gruppo e che non te ne sia mai allontanato (a parte la parentesi in Toscana, che è durata meno di una mononucleosi). Sei probabilmente l’unica persona con buon gusto musicale e di certo l’unica capace di emozionarsi davanti a una puleggia, ma noi ti vogliamo bene proprio così. Ti ringrazio per far parte della mia vita e per aver contribuito a quello che sono oggi, specialmente con la tua passione per la fisica e la meccanica. Ti auguro davvero il meglio nella vita, perché se c’è qualcuno che lo merita, quello sei tu. Grazie."
+    },
+    {
+        "nome": "giorgia",
+        "cognome": "tempio",
+        "pin": "64329",
+        "gruppo": "Forum",
+        "ringraziamenti": "Giorgia Tempio, come piace a te fare nomi e cognomi, forse il tuo è ringraziamento più difficile che dovrò scrivere. Il motivo è abbastanza ovvio, mentre gli altri hanno spalmato il loro contributo in anni, tu l'hai fatto principalmente in 4 mesi. Al di là del rapporto che abbiamo, vorrei dire due parole su Giorgia Tempio, la persona che ho conosciuto. La nostra è stata una conoscenza un po’ “casuale” (tua cugina direbbe che sono state le vibrazioni), e lo dico tra virgolette perché sappiamo entrambi come quel telefono sia finito nella mia macchina. Ma è grazie a quella mossa che ho potuto conoscere Giorgia Tempio, per gli amici Temple G o Jiji: una persona davvero interessante. Durante le nostre conversazioni fino all’alba ho capito di aver trovato una persona speciale, di quelle rare, che ascolteresti per ore. Grazie per essere entrata nella mia vita e aver avuto un ruolo così importante in così poco tempo. A volte sembra davvero che ci conosciamo da una vita: nonostante percorsi diversi, ci siamo ritrovati a 24 anni (tu 26), con lo stesso senso dell’umorismo e lo stesso modo di pensare. Grazie per aver lasciato quel telefono."
+    },
+    {
+        "nome": "anna",
+        "cognome": "dorwarth",
+        "pin": "29735",
+        "gruppo": "Forum",
+        "ringraziamenti": "Anna, per gli amici “Flash”, non ci conosciamo da molto, ma due parole te le voglio comunque dedicare*. Mi ha fatto davvero piacere conoscerti durante questa vacanza e, di te, apprezzo particolarmente la tua bontà, quasi paragonabile a quella di Stefano. Grazie per essere qui oggi a condividere questo momento insieme a me.\n\n*Se stai leggendo questo ringraziamento e non hai ancora mangiato, spegni subito il telefono e vai a mangiare. Qui chiudono presto, e di certo non ti aspettano."
+    },
+    {
+        "nome": "nicola",
+        "cognome": "meo",
+        "pin": "83512",
+        "gruppo": "Forum",
+        "ringraziamenti": "Nicola e Riccardo, il mio gruppo di lavoro preferito. È passato un bel po’ da quando usavamo i righelli in modo improprio. Ragazzi, vi ringrazio per far parte ancora della mia vita e per le nostre cene al sushi dove ci aggiorniamo su tutto. Sono contento che siamo rimasti in contatto e che, appena ne abbiamo l’occasione (e quando Riccardo è a Roma), ci troviamo insieme. Abbiamo vissuto quest’esperienza universitaria praticamente insieme (anche un po’ indirettamente), e mi riportate ai primi giorni: le mattine a fare il cruciverba e leggere gli oroscopi. Ho ricordi bellissimi del primo anno di fisica che porterò sempre con me, e per questo vi ringrazio."
+    },
+    {
+        "nome": "riccardo",
+        "cognome": "parpagnoli",
+        "pin": "83512",
+        "gruppo": "Forum",
+        "ringraziamenti": "Nicola e Riccardo, il mio gruppo di lavoro preferito. È passato un bel po’ da quando usavamo i righelli in modo improprio. Ragazzi, vi ringrazio per far parte ancora della mia vita e per le nostre cene al sushi dove ci aggiorniamo su tutto. Sono contento che siamo rimasti in contatto e che, appena ne abbiamo l’occasione (e quando Riccardo è a Roma), ci troviamo insieme. Abbiamo vissuto quest’esperienza universitaria praticamente insieme (anche un po’ indirettamente), e mi riportate ai primi giorni: le mattine a fare il cruciverba e leggere gli oroscopi. Ho ricordi bellissimi del primo anno di fisica che porterò sempre con me, e per questo vi ringrazio."
+    },
+    {
+        "nome": "beatrice",
+        "cognome": "capolei",
+        "pin": "49028",
+        "gruppo": "Forum",
+        "ringraziamenti": "Bea, so che non ci conosciamo da molto, ma voglio comunque dire due parole. Anche se forse la tua prima idea su di me non è stata il massimo, ammiro molto la tua determinazione e la tua fedeltà ai valori in cui credi. In un mondo come questo, non è facile fare quello che fai tu: lottare per i diritti e per le vite delle persone, anche quando sembra che il mondo intorno a te ignori tutto. Ti rispetto molto come persona e ti auguro di realizzare i tuoi sogni, con migliaia di persone che ti seguiranno e ti prenderanno come esempio. Sono felice che tu faccia parte del gruppo e della mia vita, e spero di fare insieme molte conversazioni stimolanti.\n\nP.S. Ricordami di darti le cartoline."
+    },
+    {
+        "nome": "francesca romana",
+        "cognome": "fagotti",
+        "pin": "21647",
+        "gruppo": "Forum",
+        "ringraziamenti": "Francesca Romana Fagotti, la mia acerrima nemica. Vorrei ringraziarti per una cosa non direttamente legata a me: per rendere felice Lorenzo. Questo mi riempie di gioia, perché sai quanto ci tengo a lui. Noi ancora non ci conosciamo benissimo, ma sono sicuro che avremo modo in futuro di farlo. Grazie quindi per essere qui a condividere questo traguardo con me e con la speranza di vivere tante esperienze insieme."
+    },
+    {
+        "nome": "francesca",
+        "cognome": "fagotti",
+        "pin": "21647",
+        "gruppo": "Forum",
+        "ringraziamenti": "Francesca Romana Fagotti, la mia acerrima nemica. Vorrei ringraziarti per una cosa non direttamente legata a me: per rendere felice Lorenzo. Questo mi riempie di gioia, perché sai quanto ci tengo a lui. Noi ancora non ci conosciamo benissimo, ma sono sicuro che avremo modo in futuro di farlo. Grazie quindi per essere qui a condividere questo traguardo con me e con la speranza di vivere tante esperienze insieme."
+    },
+    {
+        "nome": "andrea",
+        "cognome": "di marco",
+        "pin": "73259",
+        "gruppo": "Uni",
+        "ringraziamenti": "Al mio amico Andrea Di Marco, grazie per essere così come sei: una persona che riesce sempre a mettere di buon umore chiunque e a portare un sorriso a chi gli sta attorno."
+    },
+    {
+        "nome": "andrea",
+        "cognome": "sanchietti",
+        "pin": "54018",
+        "gruppo": "Uni",
+        "ringraziamenti": "Per Andrea forse ci vorrebbe un capitolo intero di elogi (con allegato un bonifico per l’affitto della GPU e della corrente), ma mi limiterò a un ringraziamento. A te va forse il merito maggiore per avermi spronato a dare il meglio, con la voglia di spingere al massimo le nostre capacità in progetti che ancora oggi non so come siamo riusciti a realizzare. Sono convinto che noi due lavoriamo alla grande in coppia, con la tua abilità di partire subito in quarta e la mia che arriva un po’ dopo. Spero di fare grandi cose insieme a te, perché so che ne abbiamo le capacità. Ti auguro il meglio per il tuo percorso in Germania e ti ringrazio per questi due anni in cui ho imparato tantissimo. Grazie."
+    },
+    {
+        "nome": "azzurra",
+        "cognome": "rossi",
+        "pin": "96135",
+        "gruppo": "",
+        "ringraziamenti": "Azzurra, non ci conosciamo molto, ma voglio ringraziarti per essere sempre presente in questi momenti. Mi piace molto questo nostro rapporto di odi et amo, dove ci sfidiamo per “contendere” Andrea. Grazie per essere qui oggi e per condividere con me questo traguardo."
+    },
+    {
+        "nome": "riccardo",
+        "cognome": "tittarelli",
+        "pin": "35784",
+        "gruppo": "Uni",
+        "ringraziamenti": "A te, Riccardo, voglio dire grazie per aver condiviso con me questo percorso, essendone una parte attiva e insegnandomi tante cose. Ti ringrazio per aver praticamente portato a termine da solo il progetto dei droni, che non sapevo come gestire, e per la tua semplicità e serenità, che hanno reso questa magistrale più leggera."
+    },
+    {
+        "nome": "luca",
+        "cognome": "masi",
+        "pin": "19283",
+        "gruppo": "",
+        "ringraziamenti": "Un grazie speciale va al mio amico Luca Masi, per essere Luca Masi (sembra poco, ma non lo è). Anche se mi ha “abbandonato” in questo percorso, è stato la mia spalla in tutto, dalle ragazze (infatti da quando è andato via, sono rimasto single) alla vita quotidiana. Ogni giorno Luca portava perle di saggezza e quel tocco di “cassinità” (pur essendo di Roccamonfina) che rendevano le giornate all’università più leggere. Mi mancano quelle giornate, ma ormai Luca è un uomo adulto, con un lavoro, una fidanzata, due figli, e capisco che ha altre priorità. Grazie per tutto, Luca, e per le nostre uscite in cui ci aggiorniamo sulla nostra vita."
+    },
+    {
+        "nome": "alessia",
+        "cognome": "simeone",
+        "pin": "67054",
+        "gruppo": "",
+        "ringraziamenti": "Alessia, a te forse è spettato uno dei compiti più difficili in questo mondo, prenderti cura di Luca, solo per questo l'intera umanità di chiede grazie. Non ci conosciamo molto direttamente, ma ricordo al tempo Luca come mi parlava di te, sono molto contento che le cose tra di voi abbiano funzionato e che chiamerete vostro figlio Francesco. Ti ringrazio per essere qui oggi e condividere con me questo momento, spero in futuro di poter fare altri giochi da tavolo insieme a voi. "
+    },
+    {
+        "nome": "lorenzo",
+        "cognome": "antonelli",
+        "pin": "49182",
+        "gruppo": "Uni",
+        "ringraziamenti": ""
+    },
+    {
+        "nome": "tommaso",
+        "cognome": "sgroi",
+        "pin": "82374",
+        "gruppo": "Uni",
+        "ringraziamenti": ""
+    },
+    {
+        "nome": "shuya",
+        "cognome": "dong",
+        "pin": "36502",
+        "gruppo": "Uni",
+        "ringraziamenti": ""
+    },
+    {
+        "nome": "luca",
+        "cognome": "scutigliani",
+        "pin": "54827",
+        "gruppo": "Uni",
+        "ringraziamenti": ""
+    },
+    {
+        "nome": "alessandro",
+        "cognome": "monteleone",
+        "pin": "78139",
+        "gruppo": "Uni",
+        "ringraziamenti": ""
+    },
+    {
+        "nome": "luca",
+        "cognome": "sorace",
+        "pin": "62951",
+        "gruppo": "Uni",
+        "ringraziamenti": ""
+    },
+    {
+        "nome": "davide",
+        "cognome": "gabrielli",
+        "pin": "45016",
+        "gruppo": "Uni",
+        "ringraziamenti": ""
+    },
     {
     "nome" : "federica",
     "cognome" : "brunelli",
-    "pin" : "1234",
+    "pin" : "84612",
     "gruppo" : "Forum",
     "ringraziamenti" : ""
     },
     {
     "nome" : "ACK",
     "cognome" : "ACK",
-    "pin" : "1234",
+    "pin" : "99999",
     "gruppo" : "Forum",
-    "ringraziamenti" : "Questo gruppo rappresenta una grande parte della mia vita. Devo molto a voi e quello che sono oggi. Abbiamo passato molte avventure insieme e spero ne passeremo molte altre. Ci conosciamo ormai da 10 anni (quasi la metà dei miei anni) e per me voi siete la mia seconda famiglia, una famiglia su cui posso contare sempre, una famiglia che mi fa sentire a casa. Vorrei quindi ringraziarvi in modo generale a tutti, ma ad alcuni di voi vorrei spendere due parole in più."
+    "ringraziamenti" : "Questo gruppo rappresenta una grande parte della mia vita. Devo molto a voi e quello che sono oggi. Abbiamo passato molte avventure insieme e spero ne passeremo molte altre. Ci conosciamo con alcuni di voi ormai da 10 anni (quasi la metà dei miei anni) e per me voi siete la mia seconda famiglia, una famiglia su cui posso contare sempre, una famiglia che mi fa sentire a casa. Vorrei quindi ringraziarvi in modo generale a tutti, per esserci e per regalarmi ricordi ed emozioni che racconterò agli anni a venire ai miei figli e ai vostri."
     },
     {
         "nome" : "ACK",
         "cognome" : "ACK",
-        "pin" : "1234",
+        "pin" : "88888",
         "gruppo" : "Liceo",
         "ringraziamenti" : ""
+    },
+    {
+        "nome" : "ACK",
+        "cognome" : "ACK",
+        "pin" : "77777",
+        "gruppo" : "Uni",
+        "ringraziamenti" : "Agli amici dell'università vorrei chiedere grazie per avermi accompagnato ed aver fatto parte insieme a me a questo percorso, condividendo vittorie e sconfitte (le vostre sconfitte). Sono fiero di aver conosciuto persone nerd come me (se non di più) che hanno alimentato la voglia di conoscere e di dare il meglio. Grazie per essere qui in questo giorno a condividere questo traguardo con me, e spero voi possiate fare carriera e diventare ricchi (nel caso ricordatevi che vi ho taggato nella mia tesi)."
     }
+    
     
 ]
 
