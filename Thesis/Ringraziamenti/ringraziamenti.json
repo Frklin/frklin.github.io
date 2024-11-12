@@ -122,7 +122,7 @@
         "nome": "azzurra",
         "cognome": "rossi",
         "pin": "96135",
-        "gruppo": "",
+        "gruppo": "Uni",
         "ringraziamenti": "Azzurra, non ci conosciamo molto, ma voglio ringraziarti per essere sempre presente in questi momenti. Mi piace molto questo nostro rapporto di odi et amo, dove ci sfidiamo per “contendere” Andrea. Grazie per essere qui oggi e per condividere con me questo traguardo."
     },
     {
@@ -136,14 +136,14 @@
         "nome": "luca",
         "cognome": "masi",
         "pin": "19283",
-        "gruppo": "",
+        "gruppo": "Uni",
         "ringraziamenti": "Un grazie speciale va al mio amico Luca Masi, per essere Luca Masi (sembra poco, ma non lo è). Anche se mi ha “abbandonato” in questo percorso, è stato la mia spalla in tutto, dalle ragazze (infatti da quando è andato via, sono rimasto single) alla vita quotidiana. Ogni giorno Luca portava perle di saggezza e quel tocco di “cassinità” (pur essendo di Roccamonfina) che rendevano le giornate all’università più leggere. Mi mancano quelle giornate, ma ormai Luca è un uomo adulto, con un lavoro, una fidanzata, due figli, e capisco che ha altre priorità. Grazie per tutto, Luca, e per le nostre uscite in cui ci aggiorniamo sulla nostra vita."
     },
     {
         "nome": "alessia",
         "cognome": "simeone",
         "pin": "67054",
-        "gruppo": "",
+        "gruppo": "Uni",
         "ringraziamenti": "Alessia, a te forse è spettato uno dei compiti più difficili in questo mondo, prenderti cura di Luca, solo per questo l'intera umanità di chiede grazie. Non ci conosciamo molto direttamente, ma ricordo al tempo Luca come mi parlava di te, sono molto contento che le cose tra di voi abbiano funzionato e che chiamerete vostro figlio Francesco. Ti ringrazio per essere qui oggi e condividere con me questo momento, spero in futuro di poter fare altri giochi da tavolo insieme a voi. "
     },
     {
@@ -199,6 +199,20 @@
     "nome" : "federica",
     "cognome" : "brunelli",
     "pin" : "84612",
+    "gruppo" : "Forum",
+    "ringraziamenti" : ""
+    },
+        {
+    "nome" : "francesco",
+    "cognome" : "dell'erna",
+    "pin" : "84613",
+    "gruppo" : "Forum",
+    "ringraziamenti" : ""
+    },
+        {
+    "nome" : "angela",
+    "cognome" : "raffaele",
+    "pin" : "84614",
     "gruppo" : "Forum",
     "ringraziamenti" : ""
     },
