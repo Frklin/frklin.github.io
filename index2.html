@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #262626; /* Dark background */
+            color: white; /* White text */
+        }
+        img {
+            width: 100px;
+        }
+        input[type="email"], button {
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 100px; /* Rounded corners */
+            display: block;
+            width: 80%; /* Responsive width */
+            max-width: 150px;
+            margin: 20px auto; /* Centering */
+        }
+        input[type="email"] {
+            border-radius: 14px; /* Rounded corners */
+            background-color: #555; /* Darker background for input */
+            color: white; /* White text */
+            padding: 15px 200px 15px 20px; /* Larger padding */
+            max-width: 30%;
+        }
+        button {
+            background: linear-gradient(90deg, rgba(255, 75, 75, 1) 0%, rgba(255, 144, 104, 1) 100%);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="tools.png" alt="Site Icon">
+    <h1>Website is still being created</h1>
+    <p1 style="font-size: large;">I wish for some unknown reason to know when the website will be up</p1>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="apikey" value="e747380d-c6ea-4504-b603-0c13bd7536f4">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <div class="h-captcha" data-captcha="true"></div>
+        <button onclick="sendEmail()">Send</button>
+    </form>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <script>
+        function sendEmail() {
+            var email = document.getElementById('email').value;
+            alert('Thank you for your interest! We will notify you at ' + email + ' when the site is ready.');
+            // Here you would typically send the email to your server
+            
+        }
+    </script>
+</body>
+</html>
