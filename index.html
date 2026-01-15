@@ -199,9 +199,9 @@
             <button class="navbar-link " data-nav-link>Resume</button>
           </li>
 
-          <!-- <li class="navbar-item">
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Publications</button>
-          </li> -->
+          </li>
           
           
           <li class="navbar-item">
@@ -763,186 +763,94 @@
 
 
      <!--
-        - #BLOG
+        - #publication
       -->
 
-      <article class="blog" data-page="publications">
+      <article class="publication" data-page="publications">
 
         <header>
           <h2 class="h2 article-title">Publications</h2>
         </header>
 
-        <section class="blog-posts">
+        <section class="publication-posts">
 
-          <ul class="blog-posts-list">
+          <ul class="publication-posts-list">
 
-            <li class="blog-post-item">
-              <a href="#">
+          <li class="publication-post-item">
+            <a href="https://arxiv.org/abs/2403.05154" target="_blank" rel="noopener">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/projects/anywear.png" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+              <div class="publication-content">
 
-                <div class="blog-content">
+                <!-- Year badge (top-left) -->
+                <time class="publication-year-badge" datetime="2024">2024</time>
+                <span class="publication-conf-badge">arXiv</span>
+                <!-- Title slightly lower -->
+                <h3 class="h3 publication-item-title">
+                  GS Edit: Efficient Text-Guided Editing of 3D Objects via Gaussian Splatting
+                </h3>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">AI</p>
+                <!-- Authors single line -->
+                <p class="publication-authors">
+                  <span class="author author--me">Francesco Palandra</span>, Andrea Sanchietti, Daniele Baieri, Emanuele Rodolà
+                </p>
 
-                    <span class="dot"></span>
+                <div class="publication-layout">
+                  <figure class="publication-banner-box">
+                    <img src="./assets/images/publications/gsedit.png" alt="GS Edit cover image" loading="lazy">
+                  </figure>
 
-                    <time datetime="2022-02-23">2024</time>
-                  </div>
+                <p class="publication-text">
+                  We present <strong>GSEdit</strong>, a pipeline for text-guided 3D object editing based on Gaussian Splatting models.
+                  Our method enables the editing of the style and appearance of 3D objects without altering their main details, all in a matter of minutes on consumer hardware.
+                  We tackle the problem by leveraging Gaussian splatting to represent 3D scenes and optimize the model using progressively varying image supervision guided by a pretrained image-based diffusion model.
+                  The input object may be provided as a 3D triangular mesh or directly as Gaussians from a generative model such as DreamGaussian.
+                  GSEdit ensures consistency across different viewpoints while preserving the integrity of the original object.
+                  Compared to NeRF-like MLP-based approaches, our method stands out for its efficiency, enabling significantly faster 3D editing.
+                  The editing process is refined through the application of the SDS loss, ensuring precise and accurate results.
+                </p>
+                </div>
 
-                  <h3 class="h3 blog-item-title">Anywear</h3>
+              </div>
 
-                  <p class="blog-text">
-                    Try it virtually, try it anywhere.
+            </a>
+          </li>
+          <li class="publication-post-item">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3641512.3690628" target="_blank" rel="noopener">
+
+              <div class="publication-content">
+
+                <!-- Year badge (top-left) -->
+                <time class="publication-year-badge" datetime="2024">2024</time>
+                <span class="publication-conf-badge">MobiHOC</span>
+                <!-- Title slightly lower -->
+                <h3 class="h3 publication-item-title">
+                  Demo: Developing a Fully Autonomous DJI Payload
+                </h3>
+
+                <!-- Authors single line -->
+                <p class="publication-authors">
+                  Federico Trombetti, <span class="author author--me">Francesco Palandra</span>, Riccardo Tittarelli, Elena Valsecchi, Gaia Maselli
+                </p>
+
+                <div class="publication-layout">
+                  <figure class="publication-banner-box">
+                    <img src="./assets/images/publications/demo.png" alt="Demo cover" loading="lazy">
+                  </figure>
+
+                  <p class="publication-text">
+                    In this demo, we showcase the collaborative effort behind the real-world deployment of <strong>Stop &amp; Offload</strong>, an offloading protocol for UAVs.
+                    The workflow spans multiple stages, from <strong>hardware configuration</strong> and testing in a <strong>simulated environment</strong> to final <strong>field deployment</strong> on real drones.
+                    The protocol improves <strong>patrolling missions</strong> by enhancing coordination and data offloading among UAVs.
+                    We address the practical challenges of translating the protocol to <strong>DJI drone hardware</strong> and provide a clear walkthrough from simulation to deployment.
+                    Our implementation leverages the <strong>DJI PSDK</strong>, <strong>ROS 2</strong>, and the <strong>Gazebo</strong> simulator to ensure a robust and reliable system.
                   </p>
 
                 </div>
 
-              </a>
-            </li>
+              </div>
 
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
+            </a>
+          </li>
 
           </ul>
 

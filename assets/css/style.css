@@ -8,9 +8,6 @@
  */
 
 
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -77,14 +74,6 @@
   --ff-poppins: 'Montserrat', sans-serif;
 
   /* font-size */
-  /* --fs-1: 24px;
-  --fs-2: 18px;
-  --fs-3: 17px;
-  --fs-4: 16px;
-  --fs-5: 15px;
-  --fs-6: 14px;
-  --fs-7: 13px;
-  --fs-8: 11px; */
   --fs-1: 48px;
   --fs-2: 30px;
   --fs-3: 28px;
@@ -93,7 +82,6 @@
   --fs-6: 19px;
   --fs-7: 17px;
   --fs-8: 15px;
-
 
   /* font-weight */
   --fw-300: 300;
@@ -121,9 +109,6 @@
 }
 
 
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -138,7 +123,12 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+/* REMOVE invalid selector (was doing nothing / wrong)
+publication-author span { display: hidden; }
+*/
+
+/* keep your original block behavior but we override time inside publications later */
+img, ion-icon, a, button, time { display: block; }
 
 button {
   font: inherit;
@@ -165,9 +155,6 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
-
-
-
 
 
 /*-----------------------------------*\
@@ -265,8 +252,8 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  width: 5px;
+  height: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -302,9 +289,6 @@ article.active {
 }
 
 
-
-
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -314,9 +298,6 @@ main {
   margin-bottom: 75px;
   min-width: 259px;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -461,11 +442,7 @@ main {
   font-size: 18px;
 }
 
-
 .social-item .social-link:hover { color: var(--light-gray); }
-
-
-
 
 
 /*-----------------------------------*\
@@ -506,9 +483,6 @@ main {
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
 
-
-
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -523,8 +497,6 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
-
-
 
 /**
  * #service 
@@ -579,7 +551,7 @@ main {
 
 .tools-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -603,18 +575,14 @@ main {
 
 .tools-icon-box { 
   margin-bottom: 10px;
-  /* background: var(--border-gradient-onyx);  */
   border-radius: 14px;
-  /* box-shadow: var(--shadow-2); */
   padding: 4px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  /* z-index: 1; */
-
 }
 
-.tools-icon-box svg { margin: auto;  }
+.tools-icon-box svg { margin: auto; }
 
 .tools-content-box { text-align: center; }
 
@@ -626,7 +594,6 @@ main {
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
-
 
 /**
  * #testimonials 
@@ -644,23 +611,20 @@ main {
 /* GRID — 2 columns on mobile, 4 on larger screens */
 .testimonials-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns on mobile */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 15px;
-  padding:  0;
+  padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* Each item behaves normally — no min-width constraints */
 .testimonials-item {
   width: 100%;
 }
 
-/* Card styles — only as tall as the content */
 .content-card {
   height: 100%;
   border-radius: 16px;
-  /* padding: 20px 16px 16px; */
   position: relative;
   box-shadow: var(--shadow-1);
   background: var(--bg-gradient-onyx);
@@ -669,25 +633,18 @@ main {
   justify-content: center;
 }
 
-/* Icon box */
 .testimonials-avatar-box {
   position: absolute;
   transform: none;
   top: auto;
   left: 0;
-  /* background: none; */
   background: var(--bg-gradient-onyx);
   border-radius: 14px;
   box-shadow: var(--shadow-1);
   overflow: hidden;
-
 }
 
-/* Title & text aligned normally */
-.testimonials-item-title {
-  margin: 0;
-  
-}
+.testimonials-item-title { margin: 0; }
 
 .testimonials-text {
   margin: 0;
@@ -809,7 +766,6 @@ main {
   line-height: 1.6;
 }
 
-
 /**
  * #clients 
  */
@@ -845,50 +801,39 @@ main {
 .clients-item img:hover { filter: grayscale(0); }
 
 
-
-
-
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
 
 .article-title { margin-bottom: 30px; }
 
-
-/**
- * education and experience 
- */
-
 .timeline { margin-bottom: 45px; }
 
 .secondary{
-    font-size: var(--fs-8);
-    color: var(--vegas-gold);
+  font-size: var(--fs-8);
+  color: var(--vegas-gold);
 }
+
 .timeline-award {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 20px; /* space between title and place */
+  gap: 20px;
   margin-bottom: 1px;
 }
 
-/* optional: make the place slightly lighter/smaller */
 .timeline-place {
   font-size: var(--fs-7);
   font-weight: 500;
   color: var(--light-gray-70);
   margin-bottom: 7px;
-
 }
-
 
 .timeline .title-wrapper {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 25px;
-
 }
 
 .timeline-list {
@@ -903,10 +848,7 @@ main {
 .timeline-item-title {
   font-size: var(--fs-6);
   line-height: 1.3;
-    margin-bottom: 5px;
-
-  /* margin-bottom: -2px; */
-  
+  margin-bottom: 5px;
 }
 
 .timeline-list span {
@@ -914,7 +856,6 @@ main {
   font-weight: var(--fw-400);
   line-height: 1.6;
   margin-bottom: 7px;
-
 }
 
 .timeline-item:not(:last-child)::before {
@@ -945,15 +886,9 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * skills 
- */
-
 .skills-title { margin-bottom: 20px; }
 
 .skills-list { padding: 20px; }
-
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 
@@ -982,9 +917,6 @@ main {
   height: 100%;
   border-radius: inherit;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -1143,31 +1075,37 @@ main {
 }
 
 
-
-
-
 /*-----------------------------------*\
-  #BLOG
+  #publication (fixed + responsive + one row)
 \*-----------------------------------*/
 
-.blog-posts { margin-bottom: 10px; }
+.publication-posts { margin-bottom: 10px; }
 
-.blog-posts-list {
-  display: grid;
-  grid-template-columns: 1fr;
+/* One publication per row (fix invalid flex-row) */
+.publication-posts-list {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
-.blog-post-item > a {
+/* Full-width card */
+.publication-post-item,
+.publication-post-item > a {
+  width: 100%;
+}
+
+.publication-post-item > a {
   position: relative;
   background: var(--border-gradient-onyx);
-  height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;
   z-index: 1;
+  display: block;      /* important for responsiveness */
+  overflow: hidden;
 }
 
-.blog-post-item > a::before {
+.publication-post-item > a::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -1176,62 +1114,157 @@ main {
   z-index: -1;
 }
 
-.blog-banner-box {
-  width: 100%;
-  height: 200px;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.blog-banner-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: var(--transition-1);
-}
-
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
-
-.blog-content { padding: 15px; }
-
-.blog-meta {
+/* Content wrapper */
+.publication-content {
+  position: relative;
+  padding: 24px;
+  padding-top: 52px; /* space for year + conference badges */
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 10px;
+  flex-direction: column;
+  gap: 14px;
+
+  /* critical: prevents flex children from forcing overflow */
+  min-width: 0;
 }
 
-.blog-meta :is(.blog-category, time) {
+/* Year top-left */
+.publication-year-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  padding: 8px 10px;
+  line-height: 1;
+
+  /* override your global time { display:block } */
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Conference top-right */
+.publication-conf-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  padding: 8px 10px;
+  line-height: 1;
+
+  display: inline-block;
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* Title */
+.publication-item-title {
+  margin: 0;
+  line-height: 1.25;
+  transition: var(--transition-1);
+
+  /* helps long titles not cause overflow */
+  overflow-wrap: anywhere;
+}
+
+.publication-post-item > a:hover .publication-item-title {
+  color: var(--orange-yellow-crayola);
+}
+
+/* Authors single line, ellipsis */
+.publication-authors {
+  margin: 0;
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* critical: allow shrinking on small screens */
+  min-width: 0;
 }
 
-.blog-meta .dot {
-  background: var(--light-gray-70);
-  width: 4px;
-  height: 4px;
-  border-radius: 4px;
+/* Keep your name highlighted AND inline */
+.author--me {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-500);
+  display: inline;
 }
 
-.blog-item-title {
-  margin-bottom: 10px;
-  line-height: 1.3;
+/* Layout of image + description */
+.publication-layout {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: stack */
+  gap: 14px;
+  align-items: start;
+
+  min-width: 0;
+}
+
+/* Fixed-ratio rectangle image (remove old padding that breaks ratio) */
+/* Image wrapper fills the full height of its grid row */
+.publication-banner-box{
+  width: 100%;
+  height: 100%;
+
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--jet);
+  background: var(--onyx);
+  padding: 0;
+
+  /* optional: keeps the image from being too short */
+  min-height: 160px;
+}
+
+.publication-banner-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--orange-yellow-crayola); }
+.publication-post-item > a:hover .publication-banner-box img {
+  transform: scale(1.05);
+}
 
-.blog-text {
+/* Description: prevent mobile overflow */
+.publication-text {
+  margin: 0;
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+
+  /* fixes x-overflow on long words/URLs */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-align: justify;
+
+  min-width: 0;
 }
 
+/* Side-by-side on larger screens */
+@media (min-width: 580px) {
+
+}
+
+/* Ensure publication list stays 1-column even if you had grid rules elsewhere */
+@media (min-width: 768px) {
+  .publication-posts-list {
+    display: flex;
+    flex-direction: column;
+  }
 
 
+
+  /* IMPORTANT: prevent the old rule from affecting publications */
+  .project-list { grid-template-columns: 1fr 1fr; }
+}
 
 
 /*-----------------------------------*\
@@ -1338,9 +1371,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
 
-
-
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
@@ -1350,50 +1380,25 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 450px) {
-
-  /**
-   * client
-   */
-
   .clients-item { min-width: calc(33.33% - 10px); }
 
-
-
-  /**
-   * #PORTFOLIO, BLOG 
-   */
-
   .project-img,
-  .blog-banner-box { height: auto; }
+  .publication-banner-box { height: auto; }
+
   .tools-item-text {
-  color: var(--light-gray-70);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-3);
-  line-height: 1.6;
+    color: var(--light-gray-70);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-3);
+    line-height: 1.6;
+  }
 }
-
-}
-
-
-
-
 
 /**
  * responsive larger than 580px screen
  */
 
 @media (min-width: 580px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-1: 32px;
     --fs-2: 24px;
     --fs-3: 26px;
@@ -1401,15 +1406,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-6: 15px;
     --fs-7: 15px;
     --fs-8: 12px;
-
-
   }
-
-
-
-  /**
-   * #REUSED STYLE
-   */
 
   .sidebar, article {
     width: 520px;
@@ -1434,22 +1431,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: 18px;
   }
 
-
-
-  /**
-   * #MAIN
-   */
-
   main {
     margin-top: 60px;
     margin-bottom: 100px;
   }
-
-
-
-  /**
-   * #SIDEBAR
-   */
 
   .sidebar {
     max-height: 180px;
@@ -1492,42 +1477,24 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: calc(100% - 64px);
   }
 
-
-
-  /**
-   * #NAVBAR
-   */
-
   .navbar { border-radius: 20px 20px 0 0; }
 
   .navbar-list { gap: 20px; }
 
   .navbar-link { --fs-8: 14px; }
 
-
-
-  /**
-   * #ABOUT
-   */
-
   .about .article-title { margin-bottom: 20px; }
 
   .about-text { margin-bottom: 40px; }
-
-  /* service */
 
   .service-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    /* padding: 30px; */
   }
 
-  .service-icon-box {
-    margin-bottom: 0;
-    /* margin-top: 5px; */
-  }
+  .service-icon-box { margin-bottom: 0; }
 
   .service-content-box { 
     text-align: left;
@@ -1541,13 +1508,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    /* padding: 30px; */
   }
 
-  .tools-icon-box {
-    margin-bottom: 0;
-    /* margin-top: 5px; */
-  }
+  .tools-icon-box { margin-bottom: 0; }
 
   .tools-content-box { 
     text-align: left;
@@ -1556,29 +1519,21 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: center;
   }
 
-  /* testimonials */
-
-   .testimonials-title {
-    margin-bottom: 25px;
-  }
+  .testimonials-title { margin-bottom: 25px; }
 
   .testimonials-list {
     gap: 30px;
     padding: 30px 0 35px;
   }
 
-  .content-card {
-    padding: 30px 24px 24px;
-  }
+  .content-card { padding: 30px 24px 24px; }
 
   .testimonials-avatar-box {
     transform: translate(30px, -10px);
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img {
-    width: 80px;
-  }
+  .testimonials-avatar-box img { width: 80px; }
 
   .testimonials-item-title {
     margin-bottom: 10px;
@@ -1590,9 +1545,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     line-clamp: 2;
     -webkit-line-clamp: 2;
   }
-
-
-  /* testimonials modal */
 
   .modal-container { padding: 20px; }
 
@@ -1624,8 +1576,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 35px;
   }
 
-  /* clients */
-
   .clients-list {
     gap: 50px;
     margin: 0 -30px;
@@ -1634,12 +1584,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .clients-item { min-width: calc(33.33% - 35px); }
-
-
-
-  /**
-   * #RESUME
-   */
 
   .timeline-list { margin-left: 65px; }
 
@@ -1653,23 +1597,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
+  .project-img, .publication-banner-box { border-radius: 16px; }
 
+  .publication-posts-list { gap: 30px; }
 
-  /**
-   * #PORTFOLIO, BLOG
-   */
-
-  .project-img, .blog-banner-box { border-radius: 16px; }
-
-  .blog-posts-list { gap: 30px; }
-
-  .blog-content { padding: 25px; }
-
-
-
-  /**
-   * #CONTACT
-   */
+  .publication-content { padding: 25px; padding-top: 52px; }
 
   .mapbox {
     height: 380px;
@@ -1691,69 +1623,35 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .form-btn ion-icon { font-size: 18px; }
-
 }
-
-
-
-
 
 /**
  * responsive larger than 768px screen
  */
 
 @media (min-width: 768px) {
-
-  /**
-   * REUSED STYLE
-   */
-
   .sidebar, article { width: 700px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
-
-
-
-  /**
-   * SIDEBAR
-   */
 
   .contacts-list {
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
   }
 
-
-
-  /**
-   * NAVBAR
-   */
-
   .navbar-link { --fs-8: 15px; }
 
-
-
-  /**
-   * ABOUT
-   */
-
-  /* testimonials modal */
   .tools-list {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;    
   }
+
   .testimonials-modal {
     gap: 35px;
     max-width: 680px;
   }
 
   .modal-avatar-box img { width: 80px; }
-
-
-
-  /**
-   * PORTFOLIO
-   */
 
   .article-title { padding-bottom: 20px; }
 
@@ -1778,15 +1676,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* portfolio and blog grid */
-
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
-
-
-
-  /**
-   * CONTACT
-   */
+  .project-list { grid-template-columns: 1fr 1fr; }
 
   .input-wrapper { grid-template-columns: 1fr 1fr; }
 
@@ -1794,51 +1684,23 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
-  
 }
-
-
-
-
 
 /**
  * responsive larger than 1024px screen
  */
 
 @media (min-width: 1024px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-    * shadow
-    */
-
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
-
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .sidebar, article {
     width: 950px;
     box-shadow: var(--shadow-5);
   }
-
-
-
-  /**
-   * MAIN 
-   */
 
   main { margin-bottom: 60px; }
 
@@ -1847,12 +1709,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin: auto;
   }
-
-
-
-  /**
-   * NAVBAR
-   */
 
   .navbar {
     position: absolute;
@@ -1873,59 +1729,34 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { font-weight: var(--fw-500); }
 
-
-
-  /**
-   * ABOUT
-   */
-
-  /* service */
-
   .service-list {
     grid-template-columns: 1fr 1fr;
     gap: 20px 25px;
   }
 
-  /* testimonials */
-
-  /* .testimonials-item { min-width: calc(40% - 15px); } */ */
-
-  /* clients */
-
   .clients-item { min-width: calc(25% - 38px); }
-
-
-
-  /**
-   * PORTFOLIO
-   */
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
 
+  .publication-banner-box { height: auto; }
+  .publication-layout {
+    grid-template-columns: 280px 1fr;
+    gap: 16px;
+  }
+  .publication-layout{
+    grid-template-columns: 280px 1fr;
+    gap: 16px;
 
-
-  /**
-   * BLOG
-   */
-
-  .blog-banner-box { height: 230px; }
-
+    /* KEY: make both columns match height */
+    align-items: stretch;
+  }
 }
-
-
-
-
 
 /**
  * responsive larger than 1250px screen
  */
 
 @media (min-width: 1250px) {
-
-  /**
-   * RESET
-   */
-
   body::-webkit-scrollbar { width: 20px; }
 
   body::-webkit-scrollbar-track { background: var(--smoky-black); }
@@ -1942,21 +1773,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-button { height: 60px; }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
   .sidebar, article { width: auto; }
 
   article { min-height: 100%; }
-
-
-
-  /**
-   * MAIN
-   */
 
   main {
     max-width: 1800px;
@@ -1972,12 +1791,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 85%;
     margin: 0;
   }
-
-
-
-  /**
-   * SIDEBAR
-   */
 
   .sidebar {
     position: sticky;
@@ -2027,12 +1840,5 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
-
-
-  /**
-	 * RESUME
-	 */
-
   .timeline-text { max-width: 700px; }
-
 }
