@@ -525,14 +525,14 @@
         <li class="timeline-item">
           <h4 class="h4 timeline-item-title">AI Research Scientist</h4>
           <p class="timeline-place ">National Research Council of Italy (CNR)</p>
-          <span>Mar 2025 — Present</span>
+          <span>Mar 2025 — Jun 2026</span>
         <p class="timeline-text">
             • Designing deep learning models for animal behavioral analysis and 3D shape reconstruction.
           </p>
           <p class="timeline-text">
             • Project funded by the Italian Ministry under the <strong style="font-weight: 500;">Support for Young Italian Talents in ERC.</strong>
             <p class="timeline-text">
-              • Collaborating with <strong style="font-weight: 500;">Tübingen University</strong> and <strong style="font-weight: 500;">Cornell University</strong>.
+              • Collaborating with <strong style="font-weight: 500;">MPI for Intelligent Systems</strong>, <strong style="font-weight: 500;">University of Munich</strong> and <strong style="font-weight: 500;">Cambridge University</strong>.
           </p>
             </p>
         </li>
@@ -776,6 +776,53 @@
 
           <ul class="publication-posts-list">
 
+          <li class="publication-post-item">
+            <a href="https://arxiv.org/abs/2609.37986" target="_blank" rel="noopener">
+
+              <div class="publication-content">
+
+                <!-- Year badge (top-left) -->
+                <time class="publication-year-badge" datetime="2026">2026</time>
+                <span class="publication-conf-badge">arXiv Preprint</span>
+                <!-- Title slightly lower -->
+                <h3 class="h3 publication-item-title">
+                  ORMA: Optimization-based Monocular 4D Reconstruction of Articulated Animals
+                </h3>
+
+                <!-- Authors single line -->
+                <p class="publication-authors">
+                  Xuyi Hu, <span class="author author--me">Francesco Palandra</span>, Shangzhe Wu, Daniel Cremers, Riccardo Marin, Sivia Zuffi
+                </p>
+
+                <div class="publication-layout">
+                  <figure class="publication-banner-box">
+                    <img src="./assets/images/publications/orma.png" alt="ORMA cover image" loading="lazy">
+                  </figure>
+
+                <p class="publication-text">
+                 Recovering articulated 4D representations of animals from monocular videos remains challenging due to the large diversity of quadruped morphologies and lack
+                of animal 4D supervision data. Existing learning-based reconstruction methods
+                operate on individual images and rely on synthetic or model-fitted 3D supervision,
+                which inherits the constraints of strong parametric priors and limits generalization
+                to out-of-distribution species. When applied to out-of-distribution animals, they
+                often recover a plausible pose while producing inaccurate geometry because the
+                underlying shape model cannot faithfully represent the observed instance. We
+                present ORMA, a training-free reconstruction framework that decouples articulation from shape, using the predicted pose as reference for optimization while
+                leveraging generative 3D priors for accurate shape reconstruction. Given a reference image, we reconstruct the animal geometry and register it to the parametric
+                model SMAL+, yielding an articulated shape adapted to the observed instance.
+                We then combine per-frame articulated pose estimates with globally consistent
+                camera poses to recover animal motion in a shared world coordinate frame, and
+                further refine the reconstruction using self-supervised DINO correspondences and
+                temporal consistency. To enable quantitative evaluation, we introduce PAW4D,
+                a synthetic multi-species benchmark with ground-truth 3D geometry and camera motion. Experiments on PAW4D, PFERD, and challenging in-the-wild videos
+                demonstrate that ORMA improves reconstruction accuracy while recovering globally consistend animal motion across diverse quadruped species.
+                                </p>
+                </div>
+
+              </div>
+
+            </a>
+          </li>
           <li class="publication-post-item">
             <a href="https://arxiv.org/abs/2403.05154" target="_blank" rel="noopener">
 
