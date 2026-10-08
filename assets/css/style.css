@@ -1076,6 +1076,142 @@ main {
 
 
 /*-----------------------------------*\
+  #CHALLENGE
+\*-----------------------------------*/
+
+/**
+ * about banner
+ */
+
+.challenge-banner {
+  position: relative;
+  background: var(--bg-gradient-yellow-1);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  margin-bottom: 25px;
+  z-index: 1;
+}
+
+.challenge-banner::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-yellow-2);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.challenge-badge {
+  display: inline-block;
+  background: var(--text-gradient-yellow);
+  color: var(--smoky-black);
+  font-size: 11px;
+  font-weight: var(--fw-600);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.challenge-banner-title { margin-bottom: 6px; }
+
+.challenge-banner-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.challenge-banner-cta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
+
+.challenge-banner-cta ion-icon { transition: transform var(--transition-1); }
+
+.challenge-banner:hover .challenge-banner-cta ion-icon { transform: translateX(4px); }
+
+/**
+ * progress (banner + challenge page)
+ */
+
+.challenge-progress {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 15px;
+}
+
+.challenge-bar {
+  display: flex;
+  gap: 4px;
+  width: 140px;
+}
+
+.challenge-bar li {
+  flex: 1;
+  height: 6px;
+  background: var(--jet);
+  border-radius: 3px;
+}
+
+.challenge-bar li.is-done { background: var(--orange-yellow-crayola); }
+
+.challenge-progress-text {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
+
+/**
+ * challenge page
+ */
+
+.challenge-intro { margin-bottom: 30px; }
+
+.challenge-list .project-title { text-transform: none; }
+
+/* covers carry text near their edges: show them whole instead of the 200px mobile crop */
+.challenge-list .project-img { height: auto; }
+
+.challenge-day {
+  margin: 0 0 4px 10px;
+  color: var(--orange-yellow-crayola);
+  font-size: 13px;
+  font-weight: var(--fw-500);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* same 40:21 shape as the 960x504 covers */
+.challenge-upcoming {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 40 / 21;
+  background: var(--bg-gradient-jet);
+  border: 1px dashed hsla(0, 0%, 100%, 0.15);
+  color: var(--light-gray-70);
+  font-size: 32px;
+}
+
+[data-challenge-day="upcoming"] .project-title { color: var(--light-gray-70); }
+
+.form-btn.challenge-follow {
+  margin-top: 30px;
+  text-transform: none;
+}
+
+
+/*-----------------------------------*\
   #publication (fixed + responsive + one row)
 \*-----------------------------------*/
 
@@ -1723,7 +1859,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .navbar-list {
-    gap: 30px;
+    gap: 20px;
     padding: 0 20px;
   }
 

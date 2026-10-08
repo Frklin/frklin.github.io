@@ -140,22 +140,56 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
+// show the page named in the URL hash (e.g. #challenge), so every page can be linked directly
+const showPageFromHash = function () {
+
+  const hashPage = location.hash.slice(1).toLowerCase();
+  let pageName = "about";
+
+  for (let i = 0; i < pages.length; i++) {
+    if (pages[i].dataset.page === hashPage) { pageName = hashPage; }
+  }
+
+  for (let i = 0; i < pages.length; i++) {
+    pages[i].classList.toggle("active", pages[i].dataset.page === pageName);
+  }
+
+  for (let i = 0; i < navigationLinks.length; i++) {
+    navigationLinks[i].classList.toggle("active", navigationLinks[i].innerHTML.toLowerCase() === pageName);
+  }
+
+  window.scrollTo(0, 0);
+
+}
+
+// nav links only change the hash; the hashchange listener switches the page
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
-
+    location.hash = this.innerHTML.toLowerCase();
   });
+}
+
+window.addEventListener("hashchange", showPageFromHash);
+showPageFromHash();
+
+
+
+// challenge progress: released day cards drive every "Day N of 7" label and progress bar
+const challengeDays = document.querySelectorAll("[data-challenge-day]");
+const releasedDays = document.querySelectorAll("[data-challenge-day='released']").length;
+const challengeProgressLabels = document.querySelectorAll("[data-challenge-progress]");
+const challengeBars = document.querySelectorAll("[data-challenge-bar]");
+
+for (let i = 0; i < challengeProgressLabels.length; i++) {
+  challengeProgressLabels[i].textContent = `Day ${releasedDays} of ${challengeDays.length}`;
+}
+
+for (let i = 0; i < challengeBars.length; i++) {
+  const segments = challengeBars[i].children;
+
+  for (let j = 0; j < segments.length; j++) {
+    segments[j].classList.toggle("is-done", j < releasedDays);
+  }
 }
 
 
