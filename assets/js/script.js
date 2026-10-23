@@ -174,14 +174,14 @@ showPageFromHash();
 
 
 
-// challenge progress: released day cards drive every "Day N of 7" label and progress bar
+// challenge progress: released cards drive every "Week N of 7" label and progress bar
 const challengeDays = document.querySelectorAll("[data-challenge-day]");
 const releasedDays = document.querySelectorAll("[data-challenge-day='released']").length;
 const challengeProgressLabels = document.querySelectorAll("[data-challenge-progress]");
 const challengeBars = document.querySelectorAll("[data-challenge-bar]");
 
 for (let i = 0; i < challengeProgressLabels.length; i++) {
-  challengeProgressLabels[i].textContent = `Day ${releasedDays} of ${challengeDays.length}`;
+  challengeProgressLabels[i].textContent = `Week ${releasedDays} of ${challengeDays.length}`;
 }
 
 for (let i = 0; i < challengeBars.length; i++) {
